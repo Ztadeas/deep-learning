@@ -3,7 +3,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 import numpy as np
 
-i = "Math Professor Scott Steiner says the numbers spell DISASTER for Gamestop shorts"
+i = ["Math Professor Scott Steiner says the numbers spell DISASTER for Gamestop shorts"]
 
 m = load_model("scoreofpostspredict.h5")
 
