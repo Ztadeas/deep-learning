@@ -66,7 +66,7 @@ for word, ind in tokenizer.word_index.items():
 
 m = models.Sequential()
 
-m.add(layers.Embedding(data.shape[0], 100, input_length=100))
+m.add(layers.Embedding(len(tokenizer), 100, input_length=100))
 m.add(layers.Conv1D(64, 7, padding="same", activation="relu"))
 m.add(layers.MaxPooling1D(5))
 m.add(layers.Conv1D(128, 7, padding="same", activation="relu"))
